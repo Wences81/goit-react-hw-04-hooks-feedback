@@ -5,8 +5,7 @@ import { Button } from './Feedback.styled';
 export default function FeedbackOptions({ options, handleIncrement }) {
   return options.map(option => (
     <Button type="button" key={option} onClick={() => handleIncrement(option)}>
-      {' '}
-      {option.toUpperCase()}{' '}
+      {option.toUpperCase()}
     </Button>
   ));
 }
